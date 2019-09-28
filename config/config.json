@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "saugatuck244!",
-    "database": "exampledb",
+    "database": "cbasketball",
     "host": "localhost",
     "dialect": "mysql"
   },

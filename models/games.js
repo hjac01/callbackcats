@@ -11,5 +11,7 @@ module.exports = function (sequelize, DataTypes) {
     score_2: DataTypes.INTEGER,
     seed_2: DataTypes.INTEGER
   });
+
   return Games;
+
 };
