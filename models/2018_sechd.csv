@@ -1,1 +1,33 @@
-﻿game_num,team,team_2,region1,Virginia,Gardener-Webb,South2,Ole Miss,Oklahoma,South3,Wisconsin,Oregon,South4,Kansas St.,UC Irvine,South5,Villanova,Saint Mary's,South6,Purdue,Old Dominion,South7,Cincinnati,Iowa,South8,Tennessee,Colgate,South9,Gonzaga,Fairleigh Dickinson,West10,Syracuse,Baylor,West11,Marquette,Murray State,West12,Florida St.,Vermont,West13,Buffalo,Arizona St.,West14,Texas Tech,Northern Kentucky,West15,Nevada,Florida,West16,Michigan,Montana,West17,Duke,ND State,East18,VCU,UCF,East19,Mississippi St.,Liberty,East20,Virigina Tech,Saint Louis,East21,Maryland,Belmont,East22,LSU,Yale,East23,Louisville,Minnesota,East24,Michigan St.,Bradley,East25,UNC,Iona,Midwest26,Utah St.,Washington,Midwest27,Auburn,NM State,Midwest28,Kansas,Northeastern,Midwest29,Iowa St.,Ohio State,Midwest30,Houston,Georgia St.,Midwest31,Wofford,Seton Hall,Midwest32,Kentucky,Abilene Christian ,Midwest
+game_num,team,team_2,region
+1,Virginia,Gardener-Webb,South
+2,Ole Miss,Oklahoma,South
+3,Wisconsin,Oregon,South
+4,Kansas St.,UC Irvine,South
+5,Villanova,Saint Mary's,South
+6,Purdue,Old Dominion,South
+7,Cincinnati,Iowa,South
+8,Tennessee,Colgate,South
+9,Gonzaga,Fairleigh Dickinson,West
+10,Syracuse,Baylor,West
+11,Marquette,Murray State,West
+12,Florida St.,Vermont,West
+13,Buffalo,Arizona St.,West
+14,Texas Tech,Northern Kentucky,West
+15,Nevada,Florida,West
+16,Michigan,Montana,West
+17,Duke,ND State,East
+18,VCU,UCF,East
+19,Mississippi St.,Liberty,East
+20,Virigina Tech,Saint Louis,East
+21,Maryland,Belmont,East
+22,LSU,Yale,East
+23,Louisville,Minnesota,East
+24,Michigan St.,Bradley,East
+25,UNC,Iona,Midwest
+26,Utah St.,Washington,Midwest
+27,Auburn,NM State,Midwest
+28,Kansas,Northeastern,Midwest
+29,Iowa St.,Ohio State,Midwest
+30,Houston,Georgia St.,Midwest
+31,Wofford,Seton Hall,Midwest
+32,Kentucky,Abilene Christian ,Midwest
