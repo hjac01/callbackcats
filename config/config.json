@@ -3,7 +3,7 @@
     "username": "root",
     "password": "saugatuck244!",
     "database": "cbasketball",
-    "host": "root",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
