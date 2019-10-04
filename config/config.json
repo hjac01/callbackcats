@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "saugatuck244!",
-    "database": "cbasketball",
-    "host": "localhost",
+    "username": "zu7j2gquhmwwyc5h",
+    "password": "veejxriszkqls8m4",
+    "database": "wzyptiq9vw3vzlsy",
+    "host": "q57yawiwmnaw13d2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
