@@ -1,9 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": "saugatuck244!",
+    "password": "Edwins08",
     "database": "cbasketball",
     "host": "localhost",
+    "port": 3307,
     "dialect": "mysql"
   },
   "test": {
