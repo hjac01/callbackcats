@@ -16,10 +16,14 @@ $(document).ready(function () {
         rank += 1
         newth.attr("scope", "row")
         newth.text(rank + " " + element)
-
+        var thename = element.replace(/\s/g, '')
+        thename.toLowerCase()
         var logo = $("<span></span>")
         var logoB = $("<img>")
-        var realLogo = "../public/images/" + element + "logo.png"
+        var realLogo = "../public/images/" + thename + "logo.png"
+        if (!realLogo) {
+            console.log("Broke")
+        }
         logoB.attr("class", "teamImg")
         logoB.attr("src", realLogo)
         logo.append(logoB)
