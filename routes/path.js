@@ -1,11 +1,16 @@
 var path = require("path");
 
 module.exports = function(app) {
+    //home
     app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname,"../public/landing.html"))
+        res.render("index")
     });
-
-    app.get("/Duke", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/landing.html"))
+    //teams 
+    app.get("/team", function(req, res) {
+        res.render("team")
+    })
+    // teams s,r,
+    app.get("/example", function(req, res) {
+        res.render("example")
     });
 };

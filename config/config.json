@@ -1,25 +1,24 @@
 {
   "development": {
-    "username": "root",
-    "password": "saugatuck244!",
-    "database": "cbasketball",
-    "host": "localhost",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
-  },
-  "production": {
-    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql",
     "username": "jzk5u54rigo7bvm1",
     "password": "etzgcor1pour6kf4",
     "database": "jh4igwptraz8u5p9",
     "host": "pwcspfbyl73eccbn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+  },
+  "test": {
+    "username": "root",
+    "dialect": "mysql",
+    "password": null,
+    "database": "testdb",
+    "host": "localhost",
+    "logging": false
+  },
+  "production": {
+    "username": "root",
+    "password": "saugatuck244!",
+    "database": "cbasketball",
+    "host": "localhost",
+    "dialect": "mysql"
   }
 }
