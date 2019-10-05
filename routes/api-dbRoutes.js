@@ -3,12 +3,18 @@ var db = require ("../models");
 
 module.exports = function(app) {
     //should get all the databases and display ahve the right setting to display data
-    app.get("/api/:id", function(req, res) {
+    app.get("/api/schedule", function(req, res) {
         //db.Schedule.findOne({ where: { id: req.params.id}}),
         //db.Roster.findOne({ where: {id: req.params.id}}),
         db.Schedule.findAll({}).then(function(dbSchedule){
             res.json(dbSchedule);
         });
+    });
+
+    app.get("/api/rosters", function(req, res) {
+      db.Roster.findAll({}).then(function(dbRoster){
+        res.json(dbRoster)
+      });
     });
 
     //comments data base to do a get post.
