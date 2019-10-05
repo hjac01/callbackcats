@@ -11,20 +11,30 @@ $(document).ready(function () {
 
     rankings.forEach(function (element) {
         var newtr = $("<tr></tr>")
-        newtr.attr("scope", "row")
-        newtr.text(element)
-        // var logo = $("<span></span>")
-        // var logoB = $("<img>")
-        // var realLogo = "../public/images/" + element + "logo.png"
-        // logoB.attr("class", "teamImg")
-        // logoB.attr("src", realLogo)
-        // logo.append(logoB)
-        // newtr.append(logo)
+        var newth = $("<th></th>")
+        var rank = rankings.indexOf(element)
+        rank += 1
+        newth.attr("scope", "row")
+        newth.text(rank + " " + element)
+
+        var logo = $("<span></span>")
+        var logoB = $("<img>")
+        var realLogo = "../public/images/" + element + "logo.png"
+        logoB.attr("class", "teamImg")
+        logoB.attr("src", realLogo)
+        logo.append(logoB)
+        newth.append(logo)
+        newtr.append(newth)
         for (i = 0; i < 3; i++) {
             var th = $("<th></th>")
             th.attr("scope", "row")
             th.text("0-0")
-            newtr.prepend(th)
+            newtr.append(th)
         }
+        var na = $("<th></th>")
+        na.attr("scope", "row")
+        na.text("N/A")
+        newtr.append(na)
+        $("#rankTable").append(newtr)
     })
 })
