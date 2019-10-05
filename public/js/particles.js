@@ -1,4 +1,4 @@
-console.log('Tets')
+console.log('Test')
 
 particlesJS.load('particles-js', './particles.json', function() {
   console.log('callback - particles.js config loaded');
