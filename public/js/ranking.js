@@ -20,7 +20,7 @@ $(document).ready(function () {
         thename.toLowerCase()
         var logo = $("<span></span>")
         var logoB = $("<img>")
-        var realLogo = "../public/images/" + thename + "logo.png"
+        var realLogo = "/images/" + thename + "logo.png"
 
         logoB.attr("class", "teamImg")
         logoB.attr("src", realLogo)
