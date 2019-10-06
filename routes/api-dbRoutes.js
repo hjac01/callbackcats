@@ -12,8 +12,24 @@ module.exports = function(app) {
     });
 
     app.get("/api/rosters", function(req, res) {
-      db.Roster.findAll({}).then(function(dbRoster){
+      db.Rosters.findAll({}).then(function(dbRoster){
         res.json(dbRoster)
+      });
+    });
+
+    app.get("/api/rosters/:school", function(req, res) {
+      console.log(req.params.school);
+      db.Rosters.findAll({
+        where: {
+          school: req.params.school,
+
+        }
+      }).then(function(dbRoster){
+        var obj = {
+          school: dbRoster,
+        }
+        // res.json(dbRoster)
+        res.render("roster", obj)
       });
     });
 
