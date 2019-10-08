@@ -1,0 +1,25 @@
+<div>        
+        <table class="table">
+            <thead>
+                <h1 class="tableHeader">Roster {{Roster.school}}</h1>
+                    <tr>
+                      <th scope="col">Game</th>
+                      <th scope="col">Team</th>
+                      <th scope="col">Team 2</th>
+                      <th scope="col">Region</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+            {{#each Schedule}}
+                      <th scope="col"> {{ game_num }}</th>
+                      <th scope="col"> {{ team }}</th>
+                      <th scope="col"> {{ team_2 }}</th>
+                      <th scope="col"> {{ region }}</th>           
+            {{else}}
+                <p>No Schedule ...</p>
+            {{/each}}
+                </tr>
+            </tbody>
+        </table>
+    </div>
