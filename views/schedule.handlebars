@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/team">March Madness Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/rankings">Rankings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/api/schedule">March Madness Schedule</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+<div>
+   <table class="table">
+    <thead>
+      <h1 class="tableHeader">Schedule 2018 March Madness</h1>
+      <tr>
+        <th scope="col">Game Number</th>
+        <th scope="col">Team 1</th>
+        <th scope="col">vs</th>
+        <th scope="col">Team 2</th>
+        <th scope="col">Region</th>
+      </tr>
+    </thead>    
+    {{#each id}}      
+    <tbody id="ScheduleTable">
+      <tr>
+        <th scope="col">{{game_num}}</th>
+        <th scope="col">{{team}}</th>
+        <th scope="col">vs</th>
+        <th scope="col">{{team_2}}</th>
+        <th scope="col">{{region}}</th>
+      </tr>
+      {{/each}}
+    </tbody>
+   </table>
+</div>

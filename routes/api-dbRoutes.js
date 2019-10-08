@@ -7,11 +7,13 @@ module.exports = function(app) {
         //db.Schedule.findOne({ where: { id: req.params.id}}),
         //db.Roster.findOne({ where: {id: req.params.id}}),
         db.Schedule.findAll({}).then(function(dbSchedule){
-            res.json(dbSchedule);
+          var obj1 = {
+            id: dbSchedule,
+          }
+            res.render("schedule", obj1);
         });
     });
-
-    app.get("/api/rosters", function(req, res) {
+    app.get("/api/rosters", function(req, res){
       db.Rosters.findAll({}).then(function(dbRoster){
         res.json(dbRoster)
       });
