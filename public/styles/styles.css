@@ -46,3 +46,7 @@ body {
   right: 0;
   z-index: -1;
 }
+
+.table {
+  background-color: rgb(252, 252, 252, 1);
+}
