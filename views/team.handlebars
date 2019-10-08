@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,515 +12,505 @@
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-  <script src="js/teams.js"></script>
+  <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-</head>
+
+</head> --}}
 
 
 <body>
 
+    
 
-
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" r href="/">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="/team">March Madness Teams</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teams.html">Teams</a>
+          <a class="nav-link" href="/rankings">Rankings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rankings.html">Rankings</a>
+          <a class="nav-link" href="/api/schedule">March Madness Schedule</a>
         </li>
 
       </ul>
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <div id="particles-js">
-      <h1 class="display-4">Tournament Turkey</h1>
-      <h2>March Madness Edition</h2>
-      <p class="lead">What did the turkey say to the computer? Google, google, google</p>
-    </div>
-  </div>
-  </div>
+        <div class="jumbotron">
+                <div class="jumbotroncontainer">
+                    <div id="particles-js">
+                  <h1 class="display-4">Tournament Turkey</h1>
+                  <h2>March Madness Edition</h2>
+                  <p class="lead">What did the turkey say to the computer? Google, google, google</p>
+                </div>
+                </div>
+              </div>
 
 
+                      
+
+<br>
 
 
-  <br>
-
-
-  <div class="icon-container">
+<div class="icon-container">
     <div class="row">
-      <div class="col-sm-1">
+        <div class="col-sm-1">
+            <li class="media">
+                <a href = "/api/rosters/duke"><img src="images/dukelogo.png" class="mr-3" data="duke"  height="50" width="50"></a>
+                <div class="media-body"></div>
+            </li>  
+        </div>
+        <div class="col-sm-1">
         <li class="media">
-          <a href="/api/rosters/Duke"><img src="images/dukelogo.png" class="mr-3" data="duke" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/ND State"><img src="images/northdakotastatelogo.png" class="mr-3" data="ndsu" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/UCF"><img src="images/ucflogo.png" class="mr-3" data="ucf" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/VCU"><img src="images/vculogo.png" class="mr-3" data="vcu" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Mississippi State"><img src="images/mississippilogo.png" class="mr-3" data="miss" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
+                <a href= "/api/rosters/"><img src="images/ndsulogo.png" class="mr-3" data="ndsu"  height="50" width="50"></a>
+                <div class="media-body"></div>
+              </li>     
+         </div>  
+         <div class="col-sm-1">
+                <li class="media">
+                        <a href= "/api/rosters/UCF"><img src="images/ucf.logo.png" class="mr-3" data="ucf"  height="50" width="50"></a>
+                        <div class="media-body"></div>
+                      </li>     
+                 </div>   
+                 <div class="col-sm-1">
+                        <li class="media">
+                                <a href= "/api/rosters/VCU"><img src="images/vculogo.png" class="mr-3" data="vcu"  height="50" width="50"></a>
+                                <div class="media-body"></div>
+                              </li>     
+                         </div>      
+                         <div class="col-sm-1">
+                                <li class="media">
+                                        <a href= "/api/rosters/mississippi state"><img src="images/mississippilogo.png" class="mr-3" data="miss"  height="50" width="50"></a>
+                                        <div class="media-body"></div>
+                                      </li>     
+                                 </div>  
 
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Liberty"><img src="images/libertylogo.png" class="mr-3" data="liberty" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Virginia Tech"><img src="images/virginiastatelogo.png" class="mr-3" data="vt" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Saint Louis"><img src="images/saintlouislogo.png" class="mr-3" data="louis" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Maryland"><img src="images/marylandlogo.png" class="mr-3" data="maryland" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Belmont"><img src="images/belmontlogo.png" class="mr-3" data="belmont" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Michigan State"><img src="images/michiganstatelogo.png" class="mr-3" data="mich" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/LSU"><img src="images/lsulogo.png" class="mr-3" data="lsu" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-
-
+                                 <div class="col-sm-1">
+                                        <li class="media">
+                                                <a href= "/api/rosters/liberty"><img src="images/libertylogo.png" class="mr-3" data="liberty"  height="50" width="50"></a>
+                                                <div class="media-body"></div>
+                                              </li>     
+                                         </div>  
+                                         <div class="col-sm-1">
+                                                <li class="media">
+                                                        <a href= "/api/rosters/viginia tech"><img src="images/vtlogo.png" class="mr-3" data="vt"  height="50" width="50"></a>
+                                                        <div class="media-body"></div>
+                                                      </li>     
+                                                 </div>  
+                                                 <div class="col-sm-1">
+                                                        <li class="media">
+                                                                <a href= "/api/rosters/saint louis"><img src="images/saintlouislogo.png" class="mr-3" data="louis"  height="50" width="50"></a>
+                                                                <div class="media-body"></div>
+                                                              </li>     
+                                                         </div>  
+                                                         <div class="col-sm-1">
+                                                                <li class="media">
+                                                                        <a href= "/api/rosters/maryland"><img src="images/maryland.logo.png" class="mr-3" data="maryland"  height="50" width="50"></a>
+                                                                        <div class="media-body"></div>
+                                                                      </li>     
+                                                                 </div>  
+                                                                 <div class="col-sm-1">
+                                                                        <li class="media">
+                                                                                <a href= "/api/rosters/belmont"><img src="images/belmontlogo.png" class="mr-3" data="belmont"  height="50" width="50"></a>
+                                                                                <div class="media-body"></div>
+                                                                              </li>     
+                                                                         </div>  
+                                                                         <div class="col-sm-1">
+                                                                                <li class="media">
+                                                                                        <a href= "/api/rosters/michigan state"><img src="images/michiganstatelogo.png" class="mr-3" data="mich"  height="50" width="50"></a>
+                                                                                        <div class="media-body"></div>
+                                                                                      </li>     
+                                                                                 </div> 
+                                                                                 <div class="col-sm-1">
+                                                                                        <li class="media">
+                                                                                                <a href= "/api/rosters/LSU"><img src="images/lsulogo.jpg" class="mr-3" data="lsu"  height="50" width="50"></a>
+                                                                                                <div class="media-body"></div>
+                                                                                              </li>     
+                                                                                         </div>   
+                                     
+    
     </div>
 
     <br>
 
     <div class="row">
-      <div class="col-sm-1">
-        <li class="media">
-          <a href="/api/rosters/Yale"><img src="images/yalelogo.png" class="mr-3" data="yale" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Louisville"><img src="images/louisvillelogo.png" class="mr-3" data="louisville" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Minnesota"><img src="images/minnesotalogo.png" class="mr-3" data="minnesota" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Bradley"><img src="images/bradleylogo.png" class="mr-3" data="bradley" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Virginia"><img src="images/virginialogo.png" class="mr-3" data="virginia" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Gardener-Webb"><img src="images/g-webblogo.png" class="mr-3" data="gardner" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Ole Miss"><img src="images/olemisslogo.png" class="mr-3" data="olemiss" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Oklahoma"><img src="images/oklahomalogo.png" class="mr-3" data="oklahoma" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Oregon"><img src="images/oregonlogo.png" class="mr-3" data="oregon" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Kansas"><img src="images/kansaslogo.png" class="mr-3" data="kansasstate" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/UC Irvine"><img src="images/ucirvinelogo.png" class="mr-3" data="ucirvine" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Purdue"><img src="images/purduelogo.png" class="mr-3" data="purdue" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
+            <div class="col-sm-1">
+                <li class="media">
+                    <a href = "/api/rosters/yale"><img src="images/yalelogo.png" class="mr-3" data="yale"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                </li>  
+            </div>
+            <div class="col-sm-1">
+            <li class="media">
+                    <a href= "/api/rosters/louisville"><img src="images/louisvillelogo.png" class="mr-3" data="louisville"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                  </li>     
+             </div> 
+             <div class="col-sm-1">
+                    <li class="media">
+                            <a href= "/api/rosters/minnesota"><img src="images/minnesotalogo.png" class="mr-3" data="minnesota"  height="50" width="50"></a>
+                            <div class="media-body"></div>
+                          </li>     
+                     </div>  
+                     <div class="col-sm-1">
+                            <li class="media">
+                                    <a href= "/api/rosters/bradley"><img src="images/bradleylogo.png" class="mr-3" data="bradley"  height="50" width="50"></a>
+                                    <div class="media-body"></div>
+                                  </li>     
+                             </div>   
+                             <div class="col-sm-1">
+                                    <li class="media">
+                                            <a href= "/api/rosters/virginia"><img src="images/virginialogo.png" class="mr-3" data="virginia"  height="50" width="50"></a>
+                                            <div class="media-body"></div>
+                                          </li>     
+                                     </div> 
+                                     <div class="col-sm-1">
+                                            <li class="media">
+                                                    <a href= "/api/rosters/gardener-webb"><img src="images/gardnerwebblogo.png" class="mr-3" data="gardner"  height="50" width="50"></a>
+                                                    <div class="media-body"></div>
+                                                  </li>     
+                                             </div>   
+                                             <div class="col-sm-1">
+                                                    <li class="media">
+                                                            <a href= "/api/rosters/ole miss"><img src="images/olemisslogo.png" class="mr-3" data="olemiss"  height="50" width="50"></a>
+                                                            <div class="media-body"></div>
+                                                          </li>     
+                                                     </div>  
+                                                     <div class="col-sm-1">
+                                                            <li class="media">
+                                                                    <a href= "/api/rosters/oklahoma"><img src="images/oklahomalogo.png" class="mr-3" data="oklahoma"  height="50" width="50"></a>
+                                                                    <div class="media-body"></div>
+                                                                  </li>     
+                                                             </div>  
+                                                             <div class="col-sm-1">
+                                                                    <li class="media">
+                                                                            <a href= "/api/rosters/oregon"><img src="images/oregonlogo.png" class="mr-3" data="oregon"  height="50" width="50"></a>
+                                                                            <div class="media-body"></div>
+                                                                          </li>     
+                                                                     </div>  
+                                                                     <div class="col-sm-1">
+                                                                            <li class="media">
+                                                                                    <a href= "/api/rosters/kansas state"><img src="images/kansasstatelogo.png" class="mr-3" data="kansasstate"  height="50" width="50"></a>
+                                                                                    <div class="media-body"></div>
+                                                                                  </li>     
+                                                                             </div>  
+                                                                             <div class="col-sm-1">
+                                                                                    <li class="media">
+                                                                                            <a href= "/api/rosters/UC irvine"><img src="images/ucirvinelogo.png" class="mr-3" data="ucirvine"  height="50" width="50"></a>
+                                                                                            <div class="media-body"></div>
+                                                                                          </li>     
+                                                                                     </div>  
+                                                                                     <div class="col-sm-1">
+                                                                                            <li class="media">
+                                                                                                    <a href= "/api/rosters/purdue"><img src="images/purduelogo.png" class="mr-3" data="purdue"  height="50" width="50"></a>
+                                                                                                    <div class="media-body"></div>
+                                                                                                  </li>     
+                                                                                             </div> 
+ 
+ 
+                                                                                             
+                                                                                             
 
+</div>
 
-
-
-
-    </div>
-
-    <br>
-
-    <div class="row">
-      <div class="col-sm-1">
-        <li class="media">
-          <a href="/api/rosters/Villanova"><img src="images/villanovalogo.png" class="mr-3" data="villanova" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Saint Mary's"><img src="images/saintmaryslogo.png" class="mr-3" data="stmarys" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Old Dominion"><img src="images/olddominionlogo.png" class="mr-3" data="odu" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Cincinnati"><img src="images/cincinnatilogo.png" class="mr-3" data="cincinatti" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Iowa"><img src="images/iowalogo.png" class="mr-3" data="iowa" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Colgate"><img src="images/colgatelogo.png" class="mr-3" data="colgate" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Gonzaga"><img src="images/gonzagalogo.png" class="mr-3" data="gonzaga" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Fairleigh Dickinson"><img src="images/f.dickinsonlogo.png" class="mr-3" data="fairleigh" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Baylor"><img src="images/baylorlogo.png" class="mr-3" data="baylor" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Florida State"><img src="images/floridastatelogo.png" class="mr-3" data="floridastate" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Marquette"><img src="images/marquettelogo.png" class="mr-3" data="marquette" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Murray State"><img src="images/murraystatelogo.png" class="mr-3" data="murray" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-
-
-
-
-
-    </div>
-
-    <br>
+<br>
 
     <div class="row">
-      <div class="col-sm-1">
-        <li class="media">
-          <a href="/api/rosters/Vermont"><img src="images/vermontlogo.png" class="mr-3" data="vermont" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Syracuse"><img src="images/syracuselogo.png" class="mr-3" data="syracuse" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Buffalo"><img src="images/buffalologo.png" class="mr-3" data="buffalo" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Arizona State"><img src="images/arizonastatelogo.png" class="mr-3" data="arizona" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Northern Kentucky"><img src="images/northernkentuckylogo.png" class="mr-3" data="northernkentucky" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Michigan"><img src="images/michiganlogo.png" class="mr-3" data="michigan" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Nevada"><img src="images/nevadalogo.png" class="mr-3" data="nevada" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Florida"><img src="images/floridalogo.png" class="mr-3" data="florida" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Montana"><img src="images/montanalogo.png" class="mr-3" data="montana" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/UNC"><img src="images/northcarolinalogo.png" class="mr-3" data="northcarolina" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Washington"><img src="images/washingtonlogo.png" class="mr-3" data="washington" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Iona"><img src="images/ionalogo.png" class="mr-3" data="iona" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
+            <div class="col-sm-1">
+                <li class="media">
+                    <a href = "/api/rosters/villanova"><img src="images/villanovalogo.png" class="mr-3" data="villanova"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                </li>  
+            </div>
+            <div class="col-sm-1">
+            <li class="media">
+                    <a href= "/api/rosters/saint marys"><img src="images/stmaryslogo.png" class="mr-3" data="stmarys"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                  </li>     
+             </div> 
+             <div class="col-sm-1">
+                    <li class="media">
+                            <a href= "/api/rosters/old dominion"><img src="images/odulogo.png" class="mr-3" data="odu"  height="50" width="50"></a>
+                            <div class="media-body"></div>
+                          </li>     
+                     </div>  
+                     <div class="col-sm-1">
+                            <li class="media">
+                                    <a href= "/api/rosters/cincinatti"><img src="images/cincinattilogo.png" class="mr-3" data="cincinatti"  height="50" width="50"></a>
+                                    <div class="media-body"></div>
+                                  </li>     
+                             </div>   
+                             <div class="col-sm-1">
+                                    <li class="media">
+                                            <a href= "/api/rosters/iowa"><img src="images/iowalogo.png" class="mr-3" data="iowa"  height="50" width="50"></a>
+                                            <div class="media-body"></div>
+                                          </li>     
+                                     </div> 
+                                     <div class="col-sm-1">
+                                            <li class="media">
+                                                    <a href= "/api/rosters/colgate"><img src="images/colgatelogo.png" class="mr-3" data="colgate"  height="50" width="50"></a>
+                                                    <div class="media-body"></div>
+                                                  </li>     
+                                             </div>   
+                                             <div class="col-sm-1">
+                                                    <li class="media">
+                                                            <a href= "/api/rosters/gonzaga"><img src="images/gonzagalogo.png" class="mr-3" data="gonzaga"  height="50" width="50"></a>
+                                                            <div class="media-body"></div>
+                                                          </li>     
+                                                     </div>  
+                                                     <div class="col-sm-1">
+                                                            <li class="media">
+                                                                    <a href= "/api/rosters/fairleigh dickison"><img src="images/fairleighlogo.png" class="mr-3" data="fairleigh"  height="50" width="50"></a>
+                                                                    <div class="media-body"></div>
+                                                                  </li>     
+                                                             </div>  
+                                                             <div class="col-sm-1">
+                                                                    <li class="media">
+                                                                            <a href= "/api/rosters/baylor"><img src="images/baylorlogo.png" class="mr-3" data="baylor"  height="50" width="50"></a>
+                                                                            <div class="media-body"></div>
+                                                                          </li>     
+                                                                     </div>  
+                                                                     <div class="col-sm-1">
+                                                                            <li class="media">
+                                                                                    <a href= "/api/rosters/florida state"><img src="images/floridastatelogo.png" class="mr-3" data="floridastate"  height="50" width="50"></a>
+                                                                                    <div class="media-body"></div>
+                                                                                  </li>     
+                                                                             </div>  
+                                                                             <div class="col-sm-1">
+                                                                                    <li class="media">
+                                                                                            <a href= "/api/rosters/marquette"><img src="images/marquettelogo.png" class="mr-3" data="marquette"  height="50" width="50"></a>
+                                                                                            <div class="media-body"></div>
+                                                                                          </li>     
+                                                                                     </div>  
+                                                                                     <div class="col-sm-1">
+                                                                                            <li class="media">
+                                                                                                    <a href= "/api/rosters/murray state"><img src="images/murraystatelogo.png" class="mr-3" data="murray"  height="50" width="50"></a>
+                                                                                                    <div class="media-body"></div>
+                                                                                                  </li>     
+                                                                                             </div> 
+ 
+ 
+                                                                                             
+                                                                                             
 
-
-
-
-
-    </div>
-    <br>
+</div>
+            
+<br>
 
     <div class="row">
-      <div class="col-sm-1">
-        <li class="media">
-          <a href="/api/rosters/Utah State"><img src="images/utahstatelogo.png" class="mr-3" data="utahstate" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Auburn"><img src="images/auburnlogo.png" class="mr-3" data="auburn" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/NM State"><img src="images/newmexicostatelogo.png" class="mr-3" data="newmexicostate" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Kansas State"><img src="images/kansasstatelogo.png" class="mr-3" data="kansasstate" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Northeastern"><img src="images/northeasternlogo.png" class="mr-3" data="northeastern" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Iowa State"><img src="images/iowastatelogo.png" class="mr-3" data="iowastate" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Ohio State"><img src="images/ohiostatelogo.png" class="mr-3" data="ohiostate" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Kentucky"><img src="images/kentuckylogo.png" class="mr-3" data="kentucky" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Houston"><img src="images/houstonlogo.png" class="mr-3" data="houston" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Georgia State"><img src="images/georgiastatelogo.png" class="mr-3" data="georgiastate" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Senton Hall"><img src="images/setonhalllogo.png" class="mr-3" data="setonhall" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Abilene Christian"><img src="images/abilenechr.logo.png" class="mr-3" data="abilene" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
+            <div class="col-sm-1">
+                <li class="media">
+                    <a href = "/api/rosters/vermont"><img src="images/vermontlogo.png" class="mr-3" data="vermont"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                </li>  
+            </div>
+            <div class="col-sm-1">
+            <li class="media">
+                    <a href= "/api/rosters/syracuse"><img src="images/syracuselogo.png" class="mr-3" data="syracuse"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                  </li>     
+             </div> 
+             <div class="col-sm-1">
+                    <li class="media">
+                            <a href= "/api/rosters/buffalo"><img src="images/buffalologo.png" class="mr-3" data="buffalo"  height="50" width="50"></a>
+                            <div class="media-body"></div>
+                          </li>     
+                     </div>  
+                     <div class="col-sm-1">
+                            <li class="media">
+                                    <a href= "/api/rosters/arizona state"><img src="images/arizonastatelogo.png" class="mr-3" data="arizona"  height="50" width="50"></a>
+                                    <div class="media-body"></div>
+                                  </li>     
+                             </div>   
+                             <div class="col-sm-1">
+                                    <li class="media">
+                                            <a href= "/api/rosters/northern kentucky"><img src="images/northernkentuckylogo.png" class="mr-3" data="northernkentucky"  height="50" width="50"></a>
+                                            <div class="media-body"></div>
+                                          </li>     
+                                     </div> 
+                                     <div class="col-sm-1">
+                                            <li class="media">
+                                                    <a href= "/api/rosters/michigan"><img src="images/michiganlogo.png" class="mr-3" data="michigan"  height="50" width="50"></a>
+                                                    <div class="media-body"></div>
+                                                  </li>     
+                                             </div>   
+                                             <div class="col-sm-1">
+                                                    <li class="media">
+                                                            <a href= "/api/rosters/nevada"><img src="images/nevadalogo.png" class="mr-3" data="nevada"  height="50" width="50"></a>
+                                                            <div class="media-body"></div>
+                                                          </li>     
+                                                     </div>  
+                                                     <div class="col-sm-1">
+                                                            <li class="media">
+                                                                    <a href= "/api/rosters/florida"><img src="images/floridalogo.png" class="mr-3" data="florida"  height="50" width="50"></a>
+                                                                    <div class="media-body"></div>
+                                                                  </li>     
+                                                             </div>  
+                                                             <div class="col-sm-1">
+                                                                    <li class="media">
+                                                                            <a href= "/api/rosters/montana"><img src="images/montanalogo.png" class="mr-3" data="montana"  height="50" width="50"></a>
+                                                                            <div class="media-body"></div>
+                                                                          </li>     
+                                                                     </div>  
+                                                                     <div class="col-sm-1">
+                                                                            <li class="media">
+                                                                                    <a href= "/api/rosters/UNC"><img src="images/northcarolinalogo.png" class="mr-3" data="northcarolina"  height="50" width="50"></a>
+                                                                                    <div class="media-body"></div>
+                                                                                  </li>     
+                                                                             </div>  
+                                                                             <div class="col-sm-1">
+                                                                                    <li class="media">
+                                                                                            <a href= "/api/rosters/washington"><img src="images/washingtonlogo.png" class="mr-3" data="washington"  height="50" width="50"></a>
+                                                                                            <div class="media-body"></div>
+                                                                                          </li>     
+                                                                                     </div>  
+                                                                                     <div class="col-sm-1">
+                                                                                            <li class="media">
+                                                                                                    <a href= "/api/rosters/iona"><img src="images/ionalogo.png" class="mr-3" data="iona"  height="50" width="50"></a>
+                                                                                                    <div class="media-body"></div>
+                                                                                                  </li>     
+                                                                                             </div> 
+ 
+ 
+                                                                                             
+                                                                                             
 
-
-
-
-
-    </div>
-
-    <br>
+</div>
+<br>
 
     <div class="row">
-      <div class="col-sm-1">
-        <li class="media">
-          <a href="/api/rosters/Wofford"><img src="images/woffordlogo.png" class="mr-3" data="wofford" height="50"
-              width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/VCU"><img src="images/vculogo.png" class="mr-3" data="prarieview" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Tennessee"><img src="images/utenlogo.png" class="mr-3" data="temple" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Colorado"><img src="images/coloradologo.png" class="mr-3" data="stjohns" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
-      <div class="col-sm-1">
-        <li class="media">
-          <a href = "/api/rosters/Colorado State"><img src="images/csulogo.png" class="mr-3" data="nccentral" height="50" width="50"></a>
-          <div class="media-body"></div>
-        </li>
-      </div>
+            <div class="col-sm-1">
+                <li class="media">
+                    <a href = "/api/rosters/utah state"><img src="images/utahstatelogo.png" class="mr-3" data="utahstate"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                </li>  
+            </div>
+            <div class="col-sm-1">
+            <li class="media">
+                    <a href= "/api/rosters/auburn"><img src="images/auburnlogo.jpg" class="mr-3" data="auburn"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                  </li>     
+             </div> 
+             <div class="col-sm-1">
+                    <li class="media">
+                            <a href= "/api/rosters/NM state"><img src="images/newmexicostatelogo.png" class="mr-3" data="newmexicostate"  height="50" width="50"></a>
+                            <div class="media-body"></div>
+                          </li>     
+                     </div>  
+                     <div class="col-sm-1">
+                            <li class="media">
+                                    <a href= "/api/rosters/kansas state"><img src="images/kansasstatelogo.png" class="mr-3" data="kansasstate"  height="50" width="50"></a>
+                                    <div class="media-body"></div>
+                                  </li>     
+                             </div>   
+                             <div class="col-sm-1">
+                                    <li class="media">
+                                            <a href= "/api/rosters/northeastern"><img src="images/northeasternlogo.png" class="mr-3" data="northeastern"  height="50" width="50"></a>
+                                            <div class="media-body"></div>
+                                          </li>     
+                                     </div> 
+                                     <div class="col-sm-1">
+                                            <li class="media">
+                                                    <a href= "/api/rosters/iowa"><img src="images/iowastatelogo.png" class="mr-3" data="iowastate"  height="50" width="50"></a>
+                                                    <div class="media-body"></div>
+                                                  </li>     
+                                             </div>   
+                                             <div class="col-sm-1">
+                                                    <li class="media">
+                                                            <a href= "/api/rosters/ohio state"><img src="images/ohiostatelogo.png" class="mr-3" data="ohiostate"  height="50" width="50"></a>
+                                                            <div class="media-body"></div>
+                                                          </li>     
+                                                     </div>  
+                                                     <div class="col-sm-1">
+                                                            <li class="media">
+                                                                    <a href= "/api/rosters/kentucky"><img src="images/kentuckylogo.jpg" class="mr-3" data="kentucky"  height="50" width="50"></a>
+                                                                    <div class="media-body"></div>
+                                                                  </li>     
+                                                             </div>  
+                                                             <div class="col-sm-1">
+                                                                    <li class="media">
+                                                                            <a href= "/api/rosters/houston"><img src="images/houstonlogo.png" class="mr-3" data="houston"  height="50" width="50"></a>
+                                                                            <div class="media-body"></div>
+                                                                          </li>     
+                                                                     </div>  
+                                                                     <div class="col-sm-1">
+                                                                            <li class="media">
+                                                                                    <a href= "/api/rosters/georgia state"><img src="images/georgiastatelogo.png" class="mr-3" data="georgiastate"  height="50" width="50"></a>
+                                                                                    <div class="media-body"></div>
+                                                                                  </li>     
+                                                                             </div>  
+                                                                             <div class="col-sm-1">
+                                                                                    <li class="media">
+                                                                                            <a href= "/api/rosters/seton hall"><img src="images/setonhalllogo.png" class="mr-3" data="setonhall"  height="50" width="50"></a>
+                                                                                            <div class="media-body"></div>
+                                                                                          </li>     
+                                                                                     </div>  
+                                                                                     <div class="col-sm-1">
+                                                                                            <li class="media">
+                                                                                                    <a href= "/api/rosters/abilene christian"><img src="images/abilenelogo.png" class="mr-3" data="abilene"  height="50" width="50"></a>
+                                                                                                    <div class="media-body"></div>
+                                                                                                  </li>     
+                                                                                             </div> 
+ 
+ 
+                                                                                             
+                                                                                             
 
-    </div>
+</div>
+
+<br>
+
+    <div class="row">
+            <div class="col-sm-1">
+                <li class="media">
+                    <a href = "/api/rosters/wofford"><img src="images/woffordlogo.png" class="mr-3" data="wofford"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                </li>  
+            </div>
+            <div class="col-sm-1">
+            <li class="media">
+                    <a href= "/api/rosters/prarieview"><img src="images/prarieviewlogo.png" class="mr-3" data="prarieview"  height="50" width="50"></a>
+                    <div class="media-body"></div>
+                  </li>     
+             </div> 
+             <div class="col-sm-1">
+                    <li class="media">
+                            <a href= ""><img src="images/templelogo.png" class="mr-3" data="temple"  height="50" width="50"></a>
+                            <div class="media-body"></div>
+                          </li>     
+                     </div>  
+                     <div class="col-sm-1">
+                            <li class="media">
+                                    <a href= ""><img src="images/stjohnslogo.png" class="mr-3" data="stjohns"  height="50" width="50"></a>
+                                    <div class="media-body"></div>
+                                  </li>     
+                             </div>   
+                             <div class="col-sm-1">
+                                    <li class="media">
+                                            <a href= ""><img src="images/nccentrallogo.png" class="mr-3" data="nccentral"  height="50" width="50"></a>
+                                            <div class="media-body"></div>
+                                          </li>     
+                                     </div> 
+
+                                                                                             </div> 
+ 
+ 
+                                                                                             
+                                                                                             
+
+</div>
+            
 
 
 
 
 
-  </div>
+    <!-- Custom Script -->
+    <script src="js/teams.js" type="text/javascript"></script>
 
-
-
-
-
-
-  <!-- Custom Script -->
-
-<canvas class="background"></canvas>
-<script src="path/to/particles.min.js"></script> 
 </body>
 
 </html>

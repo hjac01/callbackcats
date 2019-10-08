@@ -10,7 +10,7 @@ module.exports = function(app) {
         res.render("team")
     })
     // teams s,r,
-    app.get("/example", function(req, res) {
-        res.render("example")
+    app.get("/rankings", function(req, res) {
+        res.render("rankings")
     });
 };
